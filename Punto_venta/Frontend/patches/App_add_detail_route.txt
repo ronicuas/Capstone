@@ -1,0 +1,10 @@
+// --- src/App.jsx (agregar ruta detalle) ---
+// import OrderDetail from "./pages/OrderDetail";
+// <Route
+//   path="/orders/:id"
+//   element={
+//     <ProtectedRoute>
+//       <OrderDetail />
+//     </ProtectedRoute>
+//   }
+// />

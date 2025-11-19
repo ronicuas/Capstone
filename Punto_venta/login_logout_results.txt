@@ -1,0 +1,17 @@
+[1] 2025-10-14 00:10:03 Login exitoso!
+[1] 2025-10-14 00:10:03 Logout exitoso!
+[2] 2025-10-14 00:10:11 Login exitoso!
+[2] 2025-10-14 00:10:11 Logout exitoso!
+[3] 2025-10-14 00:10:18 Login exitoso!
+[3] 2025-10-14 00:10:18 Logout exitoso!
+[4] 2025-10-14 00:10:26 Login exitoso!
+[4] 2025-10-14 00:10:26 Logout exitoso!
+[5] 2025-10-14 00:10:33 Login exitoso!
+[5] 2025-10-14 00:10:33 Logout exitoso!
+
+--- RESULTADOS GENERALES ---
+Logins exitosos: 5
+Logins fallidos: 0
+Logouts exitosos: 5
+Logouts fallidos: 0
+Tiempo total: 37.28 segundos

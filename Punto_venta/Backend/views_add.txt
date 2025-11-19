@@ -1,0 +1,10 @@
+# --- api/views.py (agregar) ---
+from rest_framework.permissions import IsAuthenticated
+from rest_framework import generics
+from .models import Order
+from .serializers import OrderSerializer
+
+class OrderListView(generics.ListAPIView):
+    queryset = Order.objects.order_by("-created_at").prefetch_related("items__product")
+    serializer_class = OrderSerializer
+    permission_classes = [IsAuthenticated]

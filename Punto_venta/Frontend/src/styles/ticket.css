@@ -1,0 +1,157 @@
+/* ===========================
+   Ticket — Fondo gris + texto negro
+   =========================== */
+
+/* Reset y aislamiento */
+.ticket {
+  isolation: isolate;
+  box-sizing: border-box;
+}
+.ticket *, .ticket *::before, .ticket *::after {
+  box-sizing: inherit;
+  font: inherit;
+  color: inherit;
+}
+
+/* Lienzo 80mm (≈302px) */
+.ticket {
+  width: 302px;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #000;                 /* ✅ Texto negro */
+  background: #F4F4F4;         /* ✅ Fondo gris claro */
+  padding: 10px 12px;
+  border: 1px solid #D0D0D0;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+
+/* ===== Header ===== */
+.ticket .t-header {
+  text-align: center;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #D0D0D0;
+}
+.ticket .t-logo {
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: .4px;
+  color: #2E7D32; /* Verde principal */
+}
+.ticket .t-title {
+  font-weight: 800;
+  margin-top: 4px;
+  color: #1B5E20; /* Verde oscuro */
+}
+.ticket .t-rut, .ticket .t-razon, .ticket .t-giro,
+.ticket .t-dir, .ticket .t-com, .ticket .t-fono, .ticket .t-suc {
+  line-height: 1.2;
+  color: #000;
+}
+
+/* ===== Meta ===== */
+.ticket .t-meta {
+  margin: 8px 0;
+  padding: 6px 8px;
+  border: 1px solid #D0D0D0;
+  border-radius: 8px;
+  background: #FFFFFF;
+}
+.ticket .t-meta > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* ===== Tabla items ===== */
+.ticket .t-table { margin: 8px 0; }
+.ticket .t-row {
+  display: grid;
+  grid-template-columns: 44px 1fr 84px 92px; /* cant | desc | unit | subtotal */
+  gap: 6px;
+  padding: 4px 0;
+}
+.ticket .t-head {
+  font-weight: 700;
+  color: #1B5E20;
+  background: #EAF3EB; /* Verde suave */
+  border: 1px solid #D0D0D0;
+  border-radius: 8px;
+  padding: 6px 8px;
+  margin-bottom: 6px;
+}
+.ticket .c-cant, .ticket .c-val, .ticket .c-sub { text-align: right; }
+.ticket .c-desc { text-align: left; }
+
+.ticket .t-table .t-row:not(.t-head) {
+  border-bottom: 1px dashed #D0D0D0;
+}
+.ticket .t-table .t-row:last-child { border-bottom: 0; }
+.t-price-old {
+  text-decoration: line-through;
+  color: #6b7280;
+  font-size: 10px;
+  display: block;
+}
+.t-price-new {
+  color: #b91c1c;
+  font-weight: 700;
+  font-size: 12px;
+  display: block;
+}
+.t-price-badge {
+  color: #047857;
+  font-size: 10px;
+  font-weight: 700;
+  display: block;
+}
+
+/* ===== Totales ===== */
+.ticket .t-totals {
+  border-top: 1px solid #D0D0D0;
+  margin-top: 8px;
+  padding-top: 6px;
+}
+.ticket .t-totals > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 0;
+}
+.ticket .t-totals > div span { color: #000; }
+
+.ticket .t-total {
+  font-size: 14px;
+  font-weight: 900;
+  color: #fff;
+  background: #2E7D32;
+  border: 1px solid #1B5E20;
+  border-radius: 8px;
+  padding: 6px 8px;
+  margin-top: 8px;
+}
+
+/* ===== Footer ===== */
+.ticket .t-footer {
+  text-align: center;
+  margin-top: 10px;
+  border-top: 1px dashed #D0D0D0;
+  padding-top: 6px;
+  color: #000;
+}
+
+/* ===== Impresión ===== */
+@media print {
+  body { margin: 0; background: #fff; }
+  .ticket {
+    width: 80mm;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0 2mm;
+    background: #fff; /* blanco en impresión térmica */
+  }
+  .ticket .t-title { color: #000 !important; }
+  .ticket .t-head { background: #eee !important; color: #000 !important; }
+}

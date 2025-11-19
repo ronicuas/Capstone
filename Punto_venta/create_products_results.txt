@@ -1,0 +1,6 @@
+Producto Cactus Demo creado.
+Producto Suculenta Demo creado.
+Producto Aloe Vera Demo creado.
+Producto Helecho Demo creado.
+Producto Palma Demo creado.
+Creación de productos finalizada.

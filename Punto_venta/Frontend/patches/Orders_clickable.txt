@@ -1,0 +1,3 @@
+// --- src/pages/Orders.jsx (hacer el código clickeable) ---
+// Reemplaza el <div className="td">{o.code}</div> por:
+// <div className="td"><a href={"/orders/"+o.id} className="link">{o.code}</a></div>

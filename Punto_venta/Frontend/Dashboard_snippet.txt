@@ -1,0 +1,4 @@
+// --- Dashboard.jsx: agrega un botón para navegar a Pedidos ---
+// import { Link } from "react-router-dom";
+// Dentro de <QuickActions /> o similar:
+// <Link to="/orders" className="btn">📦 Ver pedidos</Link>

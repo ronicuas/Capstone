@@ -1,0 +1,24 @@
+.cs2-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;z-index:2000}
+.cs2-modal{width:min(920px,96vw);max-height:90vh;overflow:auto;border-radius:12px;background:#fff;border:1px solid #E0E5DA;box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.cs2-wrap{display:flex;flex-direction:column;gap:12px;padding:14px}
+.cs2-header{display:flex;align-items:center;justify-content:space-between;padding:6px 2px 10px;border-bottom:1px solid #E0E5DA}
+.cs2-title{font-weight:800;color:#212121}
+.cs2-badge{background:#F6F8F3;border:1px solid #E0E5DA;border-radius:8px;padding:6px 10px;font-weight:700;color:#2E7D32}
+.cs2-section{border:1px solid #E0E5DA;border-radius:12px;background:#FFFFFF}
+.cs2-section-head{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;border-bottom:1px solid #E0E5DA}
+.cs2-section-title{font-weight:800;color:#212121}
+.cs2-field{display:grid;gap:6px;padding:10px 12px}
+.cs2-input{height:40px;border:1px solid #E0E5DA;border-radius:10px;background:#fff;color:#212121;padding:0 10px}
+.cs2-input[rows]{height:auto;padding:10px}
+.cs2-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:8px;border-top:1px solid #E0E5DA}
+.cs2-footer-right{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+
+/* Botones compatibles con tu tema */
+.btn{border-radius:10px;padding:10px 14px;font-weight:800;cursor:pointer}
+.btn.ghost{border:1px solid #E0E5DA;background:#fff;color:#212121}
+.btn.ghost:hover{background:#F6F8F3}
+.btn.primary{border:none;background:#2E7D32;color:#fff;box-shadow:0 6px 16px rgba(46,125,50,.2)}
+.btn.primary:hover{background:#1B5E20}
+
+/* Fondo de la página como tu POS */
+.pay-screen{min-height:100vh;display:grid;place-items:center;background:#F5F7F2;color:#212121;padding:16px}

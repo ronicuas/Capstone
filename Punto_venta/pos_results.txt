@@ -1,0 +1,6 @@
+[1] Venta realizada correctamente.
+[2] Venta realizada correctamente.
+[3] Venta realizada correctamente.
+[4] Venta realizada correctamente.
+[5] Venta realizada correctamente.
+Total de ventas realizadas: 5

@@ -1,0 +1,5 @@
+# --- api/urls.py (agregar) ---
+from .views import OrderListView
+urlpatterns += [
+    path("orders/list/", OrderListView.as_view(), name="orders-list"),
+]

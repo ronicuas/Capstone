@@ -1,0 +1,2 @@
+.\venv\Scripts\python.exe Backend\test_login_selenium.py
+

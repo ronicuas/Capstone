@@ -1,0 +1,10 @@
+// --- App.jsx: agrega esta ruta dentro de <Routes> ---
+// import Orders from "./pages/Orders";
+// <Route
+//   path="/orders"
+//   element={
+//     <ProtectedRoute>
+//       <Orders />
+//     </ProtectedRoute>
+//   }
+// />
